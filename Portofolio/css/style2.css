@@ -49,6 +49,9 @@ section{
     z-index: 100;
 }
 
+.header.sticky{
+    border-bottom: .1rem solid rgba(0,0,0,.2);
+}
 .logo{
     font-size: 2.5rem;
     color: var(--text-color);
@@ -154,6 +157,7 @@ span{
     align-items: center;
     gap:3rem;
     background: var(--second-bg-color);
+    min-height: auto;
 }
 
 .about-img img{
@@ -178,6 +182,9 @@ span{
     font-size: 2.6rem;
 }
 
+.services{
+    min-height: auto;
+}
 .about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
@@ -224,6 +231,7 @@ span{
 
 .portfolio{
     background: var(--second-bg-color);
+    min-height: auto;
 
 }
 
@@ -311,6 +319,10 @@ span{
 .portfolio-layer a i{
     font-size: 2rem;
     color: var(--second-bg-color);
+}
+
+.contact{
+    min-height: auto;
 }
 
 .contact h2{
@@ -407,8 +419,19 @@ span{
     padding: 10rem 3% 2rem;
    }
 
+   .portfolio{
+    padding-bottom: 7rem ;
+   }
    .footer{
     padding: 2rem 3%;
+   }
+
+   .services{
+    padding-bottom: 7rem;
+   }
+
+   .contact{
+    min-height: auto;
    }
 }
 
@@ -466,4 +489,50 @@ span{
   .services h2{
     margin-bottom: 3rem;
   }
+
+  .portfolio h2 {
+    margin-bottom: 3rem;
+  }
+  .portfolio-container{
+    grid-template-columns: repeat(2,1fr)
+
+  }
  }
+
+ @media (max-width: 617px){
+    
+    .portfolio-container{
+        grid-template-columns: 1fr
+    
+      }
+ }
+
+ @media (max-width: 450px){
+    
+    html{
+        font-size: 50%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+ }
+ @media (max-width: 350px){
+    
+    .home-img img{
+        width: 90vw;
+    }
+    .about-img img{
+        width: 90vw;
+    }
+   
+    .footer{
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
+ }
+ 
