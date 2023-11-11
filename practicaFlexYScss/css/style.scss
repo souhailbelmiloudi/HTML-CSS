@@ -1,0 +1,68 @@
+/* variables **/
+@use "variables";
+/* mixins **/
+@use "mixin";
+
+body{
+    background-color: variables.$color-primario;
+    font-family: sans-serif;
+}
+
+.contenedor{
+    width: 80%;
+    margin: variables.$margin auto; 
+    margin-top: 2em;
+    padding: variables.$padding; 
+    @include mixin.flexbox();
+    flex-wrap: wrap;
+    background-color: variables.$color-secundario;
+    border-radius: variables.$border-radius;
+    box-sizing: border-box;
+
+    .cajas{
+        @include mixin.flexbox(center,center,column);
+        width: 100%;
+        margin: variables.$margin;
+        padding: variables.$padding;
+        .caja{
+            @include mixin.flexbox(center,center,space-between);
+
+            width: 100%;
+            .img{
+                width: 5rem;
+                height: 5rem;
+                margin: variables.$margin;
+                @include mixin.flexbox();
+                border: 1px solid variables.$color-oscuro;
+                border-radius: variables.$border-radius-2; 
+
+                img{
+                    max-width: 95%;
+                    max-height: 95%;
+                    border-radius: variables.$border-radius-2;
+                }
+            }
+
+            .icon{
+                //background-color: #333;
+                width: 1rem;
+                height: 9rem;
+                margin: variables.$margin;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+
+                }
+
+            }
+        }
+    }
+    .lineaseparadora{
+        width: 80%;
+        height: 1px;
+        background-color: variables.$color-oscuro;
+        margin: variables.$margin;
+    }
+    
+}
