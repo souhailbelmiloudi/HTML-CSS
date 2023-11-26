@@ -227,6 +227,7 @@ span{
 .services-box p{
    font-size: 1.6rem;
    margin: 1rem 0.3;
+   padding: 2rem;
 }
 
 .portfolio{
@@ -264,8 +265,11 @@ span{
 }
 
 .portfolio-box img{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     transform: .5s ease;
+    
+
 }
 
 .portfolio-box:hover img{
