@@ -40,5 +40,9 @@ window.addEventListener("scroll" ,()=>{
 
 
 
-//============ slider==============
+//=============dawnload cv=============
+const download =document.getElementById("download")
+download.addEventListener("click", ()=>{
+    window.open("https://drive.google.com/file/d/1ZGcGGqYrDUHknu9L9VbbgsYNJ3TiCtvT/view?usp=drive_link")
+})
 
