@@ -43,11 +43,8 @@ window.addEventListener("scroll" ,()=>{
 //=============dawnload cv=============
 const download =document.getElementById("download")
 download.addEventListener("click", ()=>{
-    download.href="../assets/Cv.pdf"
+    download.href="../assets/Cv_souhailBelmiloudi.pdf"
     download.target="_blank"
-    download.download="cv.pdf"
-
-    
-
+    download.download="Cv_souhailBelmiloudi.pdf"
 
 })
