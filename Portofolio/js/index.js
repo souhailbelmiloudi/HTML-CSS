@@ -48,3 +48,9 @@ download.addEventListener("click", ()=>{
     download.download="Cv_souhailBelmiloudi.pdf"
 
 })
+
+//=============send email=============
+
+const form =document.getElementById("contact-form")
+
+
